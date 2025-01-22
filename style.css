@@ -9,16 +9,17 @@
     background-size: cover;
 
 }
-.curriculum-section-title{
-    font-size: 46px;
-font-weight: 700;
-text-align:center;
+
+.curriculum-section-title {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
 }
 
 .curriculum-cards {
     display: flex;
     align-items: center;
-    justify-content:end;
+    justify-content: end;
     gap: 1rem;
 
 }
@@ -66,6 +67,58 @@ text-align:center;
 
 }
 
+.curriculum-btn {
+    border: none;
+    background-color: white;
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    margin-top: 2rem;
+    position: relative;
+
+}
+
+.greater {
+    padding: 2rem;
+    background-color: rgb(254, 163, 1);
+    height: 2rem;
+    width: 2rem;
+    border-radius: 2rem;
+    border: none;
+
+
+}
+
+.less {
+    padding: 2rem;
+    background-color: rgb(254, 163, 1);
+    height: 2rem;
+    width: 2rem;
+    border-radius: 2rem;
+    border: none;
+
+}
+
+.less-than .fa-solid {
+    color: white;
+    position: absolute;
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+    margin-top: 1.2rem;
+}
+
+.greater-than .fa-solid {
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+    margin-top: 1.2rem;
+    position: absolute;
+}
+
 /*story section started*/
 
 #story-section {
@@ -78,14 +131,12 @@ text-align:center;
     background-position: center;
     background-size: cover;
 
-
-
 }
 
 .story-section-title {
     text-align: center;
     padding: 2rem;
-    font-size: 36px;
+    font-size: 2.2rem;
     font-weight: 500;
 }
 
@@ -98,24 +149,17 @@ text-align:center;
 }
 
 .story-details {
-
     height: 600px;
     display: flex;
     justify-content: center;
     gap: 1.25rem;
-
-
-
 }
 
 .story-description {
 
     background-color: white;
-
     position: relative;
     border-radius: 1rem;
-    ;
-
 }
 
 .image-1 {
@@ -137,6 +181,17 @@ text-align:center;
 .story-content {
 
     padding: 1.5rem;
+}
+
+.story-content h2 {
+    font-family: Quicksand;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.story-content p {
+    font-size: 15.34px;
+    font-weight: 500;
 }
 
 .story-image {
@@ -164,8 +219,6 @@ text-align:center;
     height: 2rem;
     border-radius: 3rem;
     position: absolute;
-
-
     background: rgb(149, 178, 38);
     margin-top: -25px;
     left: 2rem;
@@ -177,8 +230,6 @@ text-align:center;
     height: 2rem;
     border-radius: 3rem;
     position: absolute;
-
-
     background: rgb(93, 88, 240);
     margin-top: -25px;
     left: 2rem;
@@ -210,7 +261,6 @@ text-align:center;
 
 .story-btn {
     border-radius: 12px;
-
     padding: 1.2rem 2.2rem 1.2rem 2.2rem;
     background: rgb(17, 17, 17);
     color: aliceblue;
@@ -220,17 +270,31 @@ text-align:center;
 /*story section ended*/
 
 @media screen and (max-width:688px) {
-    #curriculum-section{
-        width:100%;
+    #curriculum-section {
+        width: 100%;
         height: 1200px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
+
     .curriculum-cards {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-    .curriculum-cards-description{
+
+    .curriculum-cards-description {
         width: 100%;
-        height: 320px;
+        height: 330px;
+    }
+
+    .curriculum-section-title {
+        font-size: 2rem;
+        font-weight: 500px;
+    }
+
+    .arrow {
+        display: none;
     }
 
     /*story section started*/
@@ -238,12 +302,16 @@ text-align:center;
         width: 100%;
         height: 1050px;
         position: relative;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
 
     }
 
     .story-section-title {
         padding: 0rem;
-        margin-bottom: 8rem;
+        margin-bottom: 9rem;
+        font-size: 1.75rem;
     }
 
     .story-description {
@@ -251,18 +319,14 @@ text-align:center;
     }
 
     .story-details {
-
         display: flex;
-
         flex-direction: column-reverse;
 
     }
 
     .story-image {
         width: 100%;
-
         display: grid;
-
         margin-top: 1rem;
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
@@ -289,7 +353,6 @@ text-align:center;
 
     .story-button {
         margin-top: 2rem;
-
         position: absolute;
 
 
@@ -299,9 +362,6 @@ text-align:center;
 
         margin-top: 150px;
         margin-left: 130px;
-
-
-
     }
 
     /*story section ended*/
